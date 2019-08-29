@@ -19,15 +19,17 @@ const Post = ({getPost, post: {post, loading}, match}) => {
         <PostItem post = {post} showAction={false}/>
         <CommentForm postId={post._id}/>
         <div className='comments'>
-            {post.comments.map(comment=>
+            {post.comments.map(comment=> (
                 <CommentItem key ={comment._id} comment={comment} postId={post._id}/>
-            )}
+            ))}
         </div>
     </Fragment>
 }
 
 Post.propTypes = {
-    getPost: PropTypes.func.isRequired
+    getPost: PropTypes.func.isRequired,
+    post: PropTypes.object.isRequired,
+    match: PropTypes.string.isRequired
 }
 
 const mapStateToProps =state => ({
