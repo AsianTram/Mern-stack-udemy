@@ -1,6 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://tram123:tram123@mernudemy-0xchy.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtSecret":"mysecrettoken",
-    "githubClientId":"abaa131a09a5dac90cab",
-    "githubSecret":"8b53ca1947e4d3fbf7f98a6582f52a3279954816"
-}
